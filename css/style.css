@@ -15,12 +15,18 @@ body {
   font-size: 14px;
 }
 main {
+  flex-grow: 1;
+}
+#homepage {
   background-image: url(../img/bg-index.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   color: #fff;
-  flex-grow: 1;
+}
+#equipment {
+  color: #fff;
+  background: #455274;
 }
 .grad {
   background: linear-gradient(90deg, #6CA9D6 0%, rgba(34, 41, 59, 0) 100%);
@@ -39,9 +45,23 @@ h1 {
   font-size: 62px;
   margin-top: 70px;
 }
+h2 {
+  margin-top: 13px;
+  font-size: 28px;
+  position: relative;
+}
 h3 {
   font-size: 24px;
   margin-bottom: 15px;
+}
+h2::before {
+  content: "";
+  width: 470px;
+  height: 61px;
+  position: absolute;
+  background-image: url(../img/svg/h2.svg);
+  top: -13px;
+  left: 0;
 }
 footer {
   flex-shrink: 0;
