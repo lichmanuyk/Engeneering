@@ -1,5 +1,7 @@
-h1 {
-  font-size: 61px;
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 .navbar {
   background-color: #22293B;
@@ -15,4 +17,15 @@ h1 {
 main {
   background-image: url(../img/bg-index.jpg);
   color: #fff;
+  flex-grow: 1;
 }
+h1 {
+  font-size: 61px;
+}
+footer {
+  flex-shrink: 0;
+  background-color: #22293B;
+}
+
+
+
