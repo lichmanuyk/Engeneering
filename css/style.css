@@ -67,10 +67,45 @@ footer {
   flex-shrink: 0;
   background-color: #22293B;
 }
+#equipment a {
+  cursor: pointer;
+}
+#equipment a img {
+  border: 3px solid #6CA9D6;
+  box-sizing: border-box;
+  min-width: auto;
+  min-height: auto;
+  height: 100%;
+}
+#equipment a .img-wrapper {
+  width: 200px;
+  height: 204px;
+  overflow: hidden
+}
+#equipment a .img-wrapper .tabl {
+  width: 170px;
+  height: 100px;
+  background-color: #fff;
+  top: 70%;
+  left: 85px;
+  position: absolute;
+  z-index: 10;
+  color: #000;
+}
+#equipment a .img-wrapper .tabl p {
+  margin-top: 9px;
+  margin-left: 4px;
+  font-size: 16px;
+}
+
+@media (max-width: 991px) {
+  h1 {
+    margin-top: 20px;
+  }
+}
 @media (max-width: 767px) {
   h1 {
     font-size: 48px;
-    margin-top: 20px;
   }
   h3 {
     font-size: 18px;
