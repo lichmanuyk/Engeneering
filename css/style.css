@@ -16,15 +16,58 @@ body {
 }
 main {
   background-image: url(../img/bg-index.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   color: #fff;
   flex-grow: 1;
 }
+.grad {
+  background: linear-gradient(90deg, #6CA9D6 0%, rgba(34, 41, 59, 0) 100%);
+  margin-top: 55px;
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+.grad p {
+  margin-top: 29px;
+  margin-bottom: 7px;
+}
+.grad ul li{
+  line-height: 33px;
+}
 h1 {
-  font-size: 61px;
+  font-size: 62px;
+  margin-top: 70px;
+}
+h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
 }
 footer {
   flex-shrink: 0;
   background-color: #22293B;
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 48px;
+    margin-top: 20px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .grad {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 575px) {
+  h1 {
+    font-size: 36px;
+    margin-top: 0;
+  }
+  h3 {
+    font-size: 16px;
+  }
 }
 
 
