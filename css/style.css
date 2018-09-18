@@ -1,4 +1,6 @@
-
+h1 {
+  font-size: 61px;
+}
 .navbar {
   background-color: #22293B;
   box-shadow: none;
@@ -9,4 +11,8 @@
 }
 .nav-item a {
   font-size: 14px;
+}
+main {
+  background-image: url(../img/bg-index.jpg);
+  color: #fff;
 }
