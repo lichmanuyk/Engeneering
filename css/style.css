@@ -17,6 +17,8 @@ body {
 main {
   flex-grow: 1;
 }
+
+
 #homepage {
   background-image: url(../img/bg-index.jpg);
   background-repeat: no-repeat;
@@ -41,6 +43,10 @@ main {
 .grad ul li{
   line-height: 33px;
 }
+
+
+
+
 h1 {
   font-size: 62px;
   margin-top: 70px;
@@ -49,6 +55,7 @@ h2 {
   margin-top: 13px;
   font-size: 28px;
   position: relative;
+  z-index: 10;
 }
 h3 {
   font-size: 24px;
@@ -62,7 +69,10 @@ h2::before {
   background-image: url(../img/svg/h2.svg);
   top: -13px;
   left: 0;
+  z-index: -1;
 }
+
+
 footer {
   flex-shrink: 0;
   background-color: #22293B;
@@ -97,6 +107,40 @@ footer {
   font-size: 16px;
 }
 
+#partners {
+  background: rgba(108, 169, 214, 0.8);
+  background: url(../img/prtn-bg.jpg) no-repeat;
+  background-size: cover;
+  background: linear-gradient(180deg, #89BADE 0%, rgba(137, 186, 222, 0) 100%);
+  color: #22293B;
+}
+#partners h2 {
+  margin-bottom: 40px;
+}
+#partners .row p::before {
+  content: "";
+  width: 2px;
+  height: 70px;
+  background-color: #22293B;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#partners .row p {
+  padding-left: 30px;
+  position: relative;
+}
+#partners .row {
+    margin-bottom: 80px!important;
+  }
+.drk h2 {
+  color: #fff;
+}
+.drk h2::before {
+  background-image: url(../img/svg/h2-b.svg);
+}
+
 @media (max-width: 1199px) {
   #equipment a .img-wrapper .tabl {
     width: 150px;
@@ -109,10 +153,16 @@ footer {
     margin-left: 6px;
     font-size: 14px;
 }
+  #partners .row {
+    margin-bottom: 50px!important;
+  }
 }
 @media (max-width: 991px) {
   h1 {
     margin-top: 20px;
+  }
+  #partners .row {
+    margin-bottom: 35px!important;
   }
 }
 @media (max-width: 767px) {
@@ -142,6 +192,26 @@ footer {
   width: 320px;
   height: 41px;
   }
+  .drk h2::before {
+    background-image: url(../img/svg/h3-b.svg);
+  }
+  #partners p {
+    font-size: 14px;
+  }
+  #partners .row p {
+    text-align: center;
+  }
+  
+  #partners .row p::before {
+    width: 150px;
+    height: 2px;
+    left: 50%;
+    top: -20px;
+    transform: translateX(-50%);
+  }
+  #partners .row img {
+    margin-bottom: 25px!important;
+  }
 }
 @media (max-width: 575px) {
   h1 {
@@ -162,10 +232,12 @@ footer {
     background-image: url(../img/svg/h4.svg);
     top: -8px;
     left: 0px;
-    
     width: 250px;
     height: 41px;
   }
+  .drk h2::before {
+  background-image: url(../img/svg/h4-b.svg);
+}
 }
 
 
