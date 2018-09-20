@@ -207,6 +207,7 @@ body {
   color: #22293B;
   font-size: 16px;
   border: none;
+  cursor: pointer;
 }
 #docs hr {
   background-color: #89b9de;
