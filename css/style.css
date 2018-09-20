@@ -103,7 +103,7 @@ footer {
 }
 #equipment a .img-wrapper .tabl p {
   margin-top: 9px;
-  margin-left: 10px;
+  margin-left: 5px;
   font-size: 16px;
 }
 
@@ -140,7 +140,18 @@ footer {
 .drk h2::before {
   background-image: url(../img/svg/h2-b.svg);
 }
-
+body {
+  background-color: #E5E5E5;
+}
+#customer h2 {
+  color: #555555;
+}
+#customer p {
+  font-size: 18px;
+}
+#customer .row img {
+  vertical-align: middle;
+}
 @media (max-width: 1199px) {
   #equipment a .img-wrapper .tabl {
     width: 150px;
@@ -150,7 +161,7 @@ footer {
   }
   #equipment a .img-wrapper .tabl p {
     margin-top: 12px;
-    margin-left: 6px;
+    margin-left: 1px;
     font-size: 14px;
 }
   #partners .row {
@@ -211,6 +222,9 @@ footer {
   }
   #partners .row img {
     margin-bottom: 25px!important;
+  }
+  #customer p {
+    font-size: 15px;
   }
 }
 @media (max-width: 575px) {
