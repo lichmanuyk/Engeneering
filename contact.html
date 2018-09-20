@@ -23,7 +23,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar py-1">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="img/logo.png" height="40" alt="Engeneering">
                 </a>
         
@@ -71,9 +71,14 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6">
                     <form class="mt-2" id="form">
-                        <input class="form-control rounded-0 mb-3" name="name" type="text" placeholder="Введите Ваше имя" required>
-                        <input class="form-control rounded-0 mb-3" name="email" type="email" placeholder="Введите Ваш Email" required>
-                        <textarea class="form-control rounded-0 mb-4" id="exampleFormControlTextarea1" rows="7" name="text" placeholder="Введите Ваше сообщение" required></textarea>
+                        <!-- Hidden Required Fields -->
+                            <input type="hidden" name="project_name" value="Engeneering Site">
+                            <input type="hidden" name="admin_email" value="zakaz05@instrdom.ru">
+                            <input type="hidden" name="form_subject" value="Письмо из формы обратной связи страницы Контакты">
+                        <!-- END Hidden Required Fields -->
+                        <input class="form-control rounded-0 mb-3" name="Имя" type="text" placeholder="Введите Ваше имя" required>
+                        <input class="form-control rounded-0 mb-3" name="Email" type="email" placeholder="Введите Ваш Email" required>
+                        <textarea class="form-control rounded-0 mb-4" id="exampleFormControlTextarea1" rows="7" name="Сообщение" placeholder="Введите Ваше сообщение" required></textarea>
                         <button class="mb-5">Отправить</button>
                     </form>
                     
@@ -121,18 +126,21 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <script>
         //E-mail Ajax Send
-        $("#form").submit(function () {
-            $.ajax({
-                type: "POST",
-                url: "mail.php",
-                data: $(this).serialize()
-            }).done(function () {
-                $(this).find("input").val("");
-                alert("Спасибо, Ваше письмо отправлено.");
-                $("#form").trigger("reset");
+            $("#form").submit(function () { //Change
+                var th = $(this);
+                $.ajax({
+                    type: "POST",
+                    url: "mail.php", //Change
+                    data: th.serialize()
+                }).done(function () {
+                    alert("Спасибо, ваше письмо отправлено!");
+                    setTimeout(function () {
+                        // Done Functions
+                        th.trigger("reset");
+                    }, 1000);
+                });
+                return false;
             });
-            return false;
-        });
 
 </script>
 </body>
