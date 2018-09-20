@@ -196,6 +196,41 @@ body {
   cursor: pointer;
   border: none;
 }
+#docs .zapros {
+  font-size: 28px;
+  color: #fff;
+}
+#form2 button {
+  background-color: #fff;
+  width: 268px;
+  height: 50px;
+  color: #22293B;
+  font-size: 16px;
+  border: none;
+}
+#docs hr {
+  background-color: #89b9de;
+}
+.fz28 {
+  font-size: 28px;
+}
+#docs .gramots {
+   flex-wrap: wrap;
+}
+#docs {
+  padding-bottom: 175px;
+}
+#docs .item  {
+  flex-wrap: wrap;
+ }
+
+#docs .item p {
+  margin-bottom: 0;
+  margin-top: 10px;
+ }
+ .nowrp {
+   white-space: nowrap;
+ }
 @media (max-width: 1199px) {
   #equipment a .img-wrapper .tabl {
     width: 150px;
@@ -218,6 +253,13 @@ body {
   }
   #partners .row {
     margin-bottom: 35px!important;
+  }
+  #docs .gramots {
+   flex-wrap: wrap;
+   justify-content: center;
+  }
+  #docs {
+    padding-bottom: 100px;
   }
 }
 @media (max-width: 767px) {
@@ -286,6 +328,26 @@ body {
   #contact p {
     font-size: 16px;
   }
+  #docs .zapros {
+    font-size: 20px;
+  }
+  #form2 button {
+    width: 200px;
+    height: 50px;
+    color: #22293B;
+    font-size: 16px;
+    border: none;
+  }
+  .fz28 {
+    font-size: 24px;
+  }
+  #docs .item p {
+    font-size: 14px;
+  }
+  #docs .item img {
+    font-size: 14px;
+    width: 80px;
+  }
 }
 @media (max-width: 575px) {
   h1 {
@@ -310,8 +372,15 @@ body {
     height: 41px;
   }
   .drk h2::before {
-  background-image: url(../img/svg/h4-b.svg);
-}
+    background-image: url(../img/svg/h4-b.svg);
+  }
+  #docs .wrap {
+    flex-direction: column!important;
+  }
+  #docs .item {
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
 }
 
 
