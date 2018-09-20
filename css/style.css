@@ -143,14 +143,58 @@ footer {
 body {
   background-color: #E5E5E5;
 }
-#customer h2 {
+#customer h2, #contact h2 {
   color: #555555;
 }
 #customer p {
   font-size: 18px;
+  color: #22293B;
 }
 #customer .row img {
   vertical-align: middle;
+}
+#contact p {
+  font-size: 18px;
+  color: #22293B;
+}
+#contact .sr {
+  font-size: 16px;
+}
+#contact .tel {
+  font-size: 24px;
+  line-height: 24px;
+}
+#contact a {
+  color: #22293B;
+}
+#contact .txtsm {
+  font-size: 14px;
+}
+#form {
+  margin-bottom: 80px;
+}
+#form ::placeholder {
+  color: #D7D7D7;
+  font-size: 16px;
+}
+#form textarea {
+  border: none;
+}
+#form input {
+  height: 45px;
+  border: none;
+}
+#form textarea:focus, #form input:focus {
+    box-shadow: none;
+}
+#form button {
+  background-color: #22293B;
+  width: 270px;
+  height: 50px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
 }
 @media (max-width: 1199px) {
   #equipment a .img-wrapper .tabl {
@@ -225,6 +269,22 @@ body {
   }
   #customer p {
     font-size: 15px;
+  }
+  #form {
+  margin-bottom: 0;
+  }
+  #form button {
+    width: 270px;
+    height: 50px;
+    font-size: 16px;
+    margin: 0 auto;
+  }
+  #contact .ppl p {
+    margin-left: 0!important;
+    padding-left: 0!important;
+  }
+  #contact p {
+    font-size: 16px;
   }
 }
 @media (max-width: 575px) {
