@@ -108,10 +108,10 @@ footer {
 }
 
 #partners {
-  background: rgba(108, 169, 214, 0.8);
-  background: url(../img/prtn-bg.jpg) no-repeat;
+  background-image: url(../img/partners-bg.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
-  background: linear-gradient(180deg, #89BADE 0%, rgba(137, 186, 222, 0) 100%);
+  background-position: bottom right;
   color: #22293B;
 }
 #partners h2 {
@@ -152,6 +152,17 @@ body {
 }
 #customer .row img {
   vertical-align: middle;
+}
+/* #partners {
+  background-image: url(../img/partners-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right; */
+#contact {
+  background-image: url(../img/contact-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 #contact p {
   font-size: 18px;
@@ -200,14 +211,16 @@ body {
   font-size: 28px;
   color: #fff;
 }
-#form2 button {
+#form2 a {
   background-color: #fff;
-  width: 268px;
-  height: 50px;
+  padding: 15px 30px 15px 30px;
   color: #22293B;
   font-size: 16px;
   border: none;
   cursor: pointer;
+}
+#form2 a:hover {
+  text-decoration: underline;
 }
 #docs hr {
   background-color: #89b9de;
@@ -219,6 +232,10 @@ body {
    flex-wrap: wrap;
 }
 #docs {
+  background-image: url(../img/docs-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
   padding-bottom: 175px;
 }
 #docs .item  {
@@ -229,8 +246,24 @@ body {
   margin-bottom: 0;
   margin-top: 10px;
  }
+ #docs .item p:hover {
+  text-decoration: underline;
+ }
  .nowrp {
    white-space: nowrap;
+ }
+ #compress {
+   background-color: #455274;
+ }
+ #compress a {
+   cursor: pointer;
+ }
+ #compress .img-wrapper p {
+   color: #22293B;
+   padding-top: 16px;
+   padding-bottom: 16px;
+   width: 100%;
+   background-color: #fff;
  }
 @media (max-width: 1199px) {
   #equipment a .img-wrapper .tabl {
@@ -262,6 +295,9 @@ body {
   #docs {
     padding-bottom: 100px;
   }
+  #compress a p {
+    font-size: 14px;
+  }
 }
 @media (max-width: 767px) {
   h1 {
@@ -288,6 +324,13 @@ body {
   top: -8px;
   left: 0px;
   width: 320px;
+  height: 41px;
+  }
+  #compress h2::before {
+  background-image: url(../img/svg/h3-compr.svg);
+  top: -8px;
+  left: 0px;
+  width: 385px;
   height: 41px;
   }
   .drk h2::before {
@@ -332,12 +375,8 @@ body {
   #docs .zapros {
     font-size: 20px;
   }
-  #form2 button {
-    width: 200px;
-    height: 50px;
-    color: #22293B;
-    font-size: 16px;
-    border: none;
+  #form2 a {
+    padding: 13px 25px 13px 25px;
   }
   .fz28 {
     font-size: 24px;
@@ -349,6 +388,15 @@ body {
     font-size: 14px;
     width: 80px;
   }
+  #compress .img-wrapper p {
+   padding-top: 16px;
+   padding-bottom: 16px;
+   width: 73%;
+  }
+  #compress .p-top {
+    font-size: 15px;
+  }
+  
 }
 @media (max-width: 575px) {
   h1 {
@@ -381,6 +429,16 @@ body {
   #docs .item {
     margin-bottom: 25px;
     margin-top: 25px;
+  }
+  #compress h2 {
+    font-size: 18px;
+  }
+  #compress h2::before {
+    background-image: url(../img/svg/h4-compr.svg);
+    top: -10px;
+    left: 0px;
+    width: 290px;
+    height: 41px;
   }
 }
 
