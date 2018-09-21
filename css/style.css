@@ -71,6 +71,9 @@ h2::before {
   left: 0;
   z-index: -1;
 }
+h5 {
+  font-size: 24px;
+}
 
 
 footer {
@@ -153,11 +156,6 @@ body {
 #customer .row img {
   vertical-align: middle;
 }
-/* #partners {
-  background-image: url(../img/partners-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center right; */
 #contact {
   background-image: url(../img/contact-bg.jpg);
   background-repeat: no-repeat;
@@ -254,6 +252,7 @@ body {
  }
  #compress {
    background-color: #455274;
+   padding-bottom: 250px
  }
  #compress a {
    cursor: pointer;
@@ -264,6 +263,15 @@ body {
    padding-bottom: 16px;
    width: 100%;
    background-color: #fff;
+ }
+ #compress #porsh p {
+   font-size: 14px;
+ }
+ #compress #centr p {
+   font-size: 14px;
+ }
+ #compress #rotor p {
+   font-size: 14px;
  }
 @media (max-width: 1199px) {
   #equipment a .img-wrapper .tabl {
@@ -297,6 +305,9 @@ body {
   }
   #compress a p {
     font-size: 14px;
+  }
+  #compress {
+    padding-bottom: 150px
   }
 }
 @media (max-width: 767px) {
@@ -395,6 +406,18 @@ body {
   }
   #compress .p-top {
     font-size: 15px;
+  }
+  #compress {
+    padding-bottom: 100px
+  }
+  #porsh img {
+    margin-bottom: 25px;
+  }
+  #centr img {
+    margin-bottom: 25px;
+  }
+  #rotor img {
+    margin-bottom: 25px;
   }
   
 }
